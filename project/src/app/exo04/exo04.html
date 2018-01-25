@@ -1,0 +1,18 @@
+<div>
+	
+	<input class="center" ng-model="exo04.text"/>
+	<button  ng-click="exo04.afficherText()">search</button>
+	<div class="recherche">
+		<h2>{{exo04.meteoService.settingService.city}}</h2>
+	
+		<div>
+			<div class="textmeteo">
+			<img src="http://openweathermap.org/img/w/{{exo04.meteoService.meteoListe[0].weather[0].icon}}.png"/>
+			</div>
+			<div class="textmeteo">
+				<p>{{exo04.meteoService.meteoListe[0].main.temp}}</p>
+			</div>
+
+		</div>
+	</div>
+</div>
